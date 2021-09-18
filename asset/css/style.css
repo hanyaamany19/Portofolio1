@@ -1,0 +1,320 @@
+* { 
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: "Roboto", sans-serif;
+ scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+ background-color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+
+.logo {
+ width: auto;
+ cursor: pointer;
+ margin: 12px 24px;
+ padding: 8px 16px;
+ color: black;
+ font-size: 2em;
+ font-weight: bold;
+}
+
+.nav-bar-items {
+ list-style: none;
+ display: flex;
+}
+
+.nav-bar li {
+    padding: 16px 32px;
+}
+
+.nav-bar-items li a {
+ font-weight: 700;
+ text-decoration: none;
+ color: black;
+}
+
+.content {
+ background-color: white;
+ padding: 50px 50px;
+ color: black;
+}
+
+.profile-container {
+ background-color: white;
+ border-radius: 20px;
+ margin-top: 90px;
+ display: flex;
+ box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.profile-picture {
+ border-radius: 50%;
+ padding: 40px;
+ width: 70%;
+}
+
+.bio {
+ padding: 40px;
+ border-radius: 0px 20px 20px 0px;
+}
+
+.title-1 {
+ font-size: 55px;
+ text-align: center;
+ color: white;
+}
+
+.subtitle {
+ font-size: 20px;
+ margin-top: 25px;
+}
+
+.content2{
+    background-color: lightblue;
+    padding: 50px 50px;
+}
+
+.judul2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.portfolio-card{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 1.5%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.portfolio-picture{ 
+    height: 250px;
+    width: 40%;
+    border-radius: 16px 0px 0px 16px;
+    object-fit: cover;
+}
+
+.portfolio-card div{
+    width: 60%;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.content3{
+    background-color: wheat;
+    padding: 50px 50px;
+}
+
+.judul3{
+    text-align: center;
+    color: black;
+}
+
+.front{
+    margin-top: 20px;
+}
+
+.content3 h3{
+    /* padding-top: 96px; */
+    margin-left: 1.5%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.skill-card {
+    flex: 0 1 22%;
+    background-color: white;
+    margin: 16px 1.5%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.skill-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.skill-title {
+    margin-bottom: 16px;
+    text-align: center;
+   font-weight: 700;
+    color: black;
+}
+
+.content4{
+    background-color: ghostwhite;
+    padding: 50px 50px;
+}
+
+.experience-card {
+    background-color: gray;
+    margin: 32px 1.5%;
+    padding: 12px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.title-2{
+    padding-top: 96px;
+    margin-left: 1.5%;
+    font-size: 1.5em;
+    color: #162783;
+    font-weight: 700;
+}
+
+.title-3{
+    color: #162783;
+    margin: 16px 0px;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.description{
+    line-height: 1.5;
+}
+
+.content5{
+    padding: 50px 50px;
+    background-color: ghostwhite;
+}
+
+.education-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    flex: 0 1 27%;
+    margin: 16px 1.5%;
+    padding: 16px 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.education-picture {
+    height: auto;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.education-info {
+    margin-left: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    padding: 32px;
+    background-color: #162783;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        position: static;
+        flex-direction: column;
+    }
+    .nav-bar-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profil-container {
+        padding-top: 32px;
+        flex-direction: column;
+    }
+    .portfolio-picture { 
+        border-radius: 16px 16px 0px 0px;
+    }
+    .foto{
+        display: block;
+        margin-left: auto;
+        margin: auto;
+        width: 40%;
+    }
+    .bio {
+        padding: 16px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .portfolio-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolio-card div {
+        width: 100%;
+        margin: 16px;
+    }
+    .portfolio-picture {
+        width: 100%;
+        height: auto;
+    }
+    .portfolio-card .title-3{
+        text-align: center;
+    }
+    .skill-card {
+        flex: 0 1 47%;
+    }
+    .skill-picture{
+        width: 50%;
+    }
+    .education-card {
+        flex: 0 1 97%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .judul1{
+        font-size: 30px;
+    }
+    .nas{
+        font-size: 14px;
+    }
+    .title-3{
+        font-size: 18px;
+    }
+    .skill-card {
+        flex: 0 1 47%;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .education-card {
+        flex: 0 1 97%;
+    }
+}
